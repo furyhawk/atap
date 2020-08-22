@@ -2,6 +2,8 @@ import nltk
 import unicodedata
 import numpy as np
 
+nltk.download('stopwords')
+nltk.download('wordnet')
 from loader import CorpusLoader
 from reader import PickledCorpusReader
 from nltk.corpus import wordnet as wn

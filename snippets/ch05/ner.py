@@ -6,6 +6,10 @@ import os
 import time
 import json
 
+import nltk
+nltk.download('words')
+nltk.download('maxent_ne_chunker')
+
 from nltk import ne_chunk
 from nltk.chunk import tree2conlltags
 

@@ -33,6 +33,6 @@ axe.set_ylabel('Error')
 axe.set_xlabel('Complexity (from Underfit to Overfit)')
 
 fname = "atap_ch04_bias_variance_tradeoff.png"
-path = os.path.join(os.path.dirname(__file__), "..", "..", "images", "ch04", fname)
+path = os.path.join(os.path.dirname(__file__), fname)
 
 plt.savefig(path)

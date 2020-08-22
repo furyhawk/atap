@@ -1,3 +1,7 @@
+import nltk
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
+
 from build import models, reader
 from build import labels as categories
 from sklearn.model_selection import train_test_split as tts
@@ -43,5 +47,5 @@ The Nashville Predators sent Shea Weber, their cornerstone, to the Montreal Cana
 Weber and Subban were together again at last weekend’s All-Star three-on-three tournament. Weber’s 31 points in 50 games for the first-place Canadiens, and his plus-18 rating, made him an obvious selection. Subban was voted in as a team captain by the fans despite a mixed first half of the season. He posted only 18 points and missed 16 games for the Predators, who are in third place in the Central Division.
 """)
 
-# print(doc[0][0])
+print(doc[0][0])
 print(sgd.predict(doc[0][0]))
